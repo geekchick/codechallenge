@@ -9,15 +9,15 @@ Instructions:
 1. After forking the project you'll see a folder called 'kin'. 
 2. Inside the 'kin' folder are several files including:
 
-	books.csv
-	librarysystem.py
-	ReadMe.txt
+	- books.csv
+	- librarysystem.py
+	- README
 
 Please note, this is a Command Line Interface program
 
 3. The books.csv file will act as a lightweight database and holds the records of books.
 4. The librarysystem.py file is a Python file will all the code to run the program
-5. The ReadMe.txt has all the instructions to run the code for the project
+5. The README has all the instructions to run the code for the project
 6. To run the code on a Mac download the 'kin' folder to your Desktop, making sure the 3 aforementioned files are in that folder
 7. Cd into the folder by doing the following: $ cd Desktop/kin
 8. Then run the program by running the library system.py file by doing this: $ python3 librarysystem.py
