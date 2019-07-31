@@ -1,4 +1,4 @@
-# How to Run Kin Code Challenge:
+# How to Run Code Challenge:
 
 Dependencies:
 
