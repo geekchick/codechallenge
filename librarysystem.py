@@ -3,11 +3,12 @@ import csv
 class KinChallenge(object):
     def __init__(self):
         self.book_list = []
-    '''
-        this function opens and reads in a csv file
-        and returns a list of dictionaries
-    '''
+    
     def create_list_of_dicts(self):
+    '''
+    this function opens and reads in a csv file
+    and returns a list of dictionaries
+     '''
         # open the csv file
         with open("books.csv") as csv_file:
             # read in the csv file into a Dict Reader
@@ -31,11 +32,12 @@ class KinChallenge(object):
 
             return self.book_list
         
-    '''
+   
+    def print_total_pages(self, my_list):
+     '''
         function that compiles the total number 
         of pages read across categories
     '''
-    def print_total_pages(self, my_list):
        # set a counter to 0
         pages_read = 0
         # for each item in the list
@@ -59,12 +61,13 @@ class KinChallenge(object):
         print(f"Total Pages Read: {pages_read}")
 
 
-    '''
+  
+    def add_text_category(self, book_list):
+      '''
          function that gets the category and 
          add it to each entry in the list of 
          dictionaries
     '''
-    def add_text_category(self, book_list):
         # tuple of codes to lookup
         codes = [ 
                 (000, 'Computer Science, Information & General Works'),
@@ -100,10 +103,11 @@ class KinChallenge(object):
 
         return self.book_list
 
-    '''
-        function that adds each page count to the categories
-    '''
+    
     def get_pagecount_of_each_category(self, book_list):
+    '''
+    function that adds each page count to the categories
+    '''
         # create an empty dictionary object
         final = {}
         # for each book in the dictionary
